@@ -74,12 +74,21 @@ body > main {
 }
 
 header {
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 46px;
+  margin-bottom: 122px;
 }
+
 #home {
+  justify-content: center;
+}
+#home .registration {
   flex-direction: column;
+  background-color: var(--red-0);
+}
+#home .registration .actions {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
