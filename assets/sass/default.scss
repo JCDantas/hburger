@@ -14,6 +14,7 @@ body, div, article, aside, form, footer, header, main, nav, section, ul, ol, li,
 
 body {
     flex-direction: column;
+<<<<<<< HEAD
     background-image: url("../images/clipboard-backgrond-mobile.png");
     background-color: var(--red-1);
 
@@ -99,4 +100,8 @@ body {
             }
         }
     }
+=======
+    background-color: var(--red-1);
+    background-image: url('../images/clipboard-backgrond-mobile.png');
+>>>>>>> e4625c173bbc5598551bbe2c45c8a739445a37b3
 }

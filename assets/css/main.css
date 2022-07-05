@@ -1,151 +1,17 @@
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto Light"), url("../fonts/Roboto-Light.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto Medium"), url("../fonts/Roboto-Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto Bold"), url("../fonts/Roboto-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto Black"), url("../fonts/Roboto-Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 900;
-}
-:root {
-  --black-0: #000000;
-  --black-1: #1F2525;
-  --black-2: #101D1D;
-  --black-3: #070D0D;
-  --black-4: #0C0B0B;
-  --black-opacity-0: #1F252580;
-  --gray-0: #D7D7D7;
-  --gray-1: #E3E3E3;
-  --orange-0: #FF760C;
-  --red-0: #DD0E0E;
-  --red-1: #250303;
-  --red-2: #3A1C1C;
-  --red-3: #921515;
-  --red-4: #B43D3D;
-  --red-opacity-0: #DD0E0E8A;
-  --red-opacity-1: #FF525280;
-  --white-0: #FFFFFF;
-  --white-opacity-0: #FFFFFF47;
-  --white-opacity-1: #FFFFFF1A;
-  --yellow-opacity-0: #F6BC1BB3;
-}
+/* Error: expected "{".
+ *   ,
+ * 5 | @import 'header.scss';
+ *   |                      ^
+ *   '
+ *   assets\sass\main.scss 5:22  root stylesheet */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected \"{\".\a   \2577 \a 5 \2502  @import 'header.scss';\d\a   \2502                       ^\a   \2575 \a   assets\\sass\\main.scss 5:22  root stylesheet";
 }
-
-body, div, article, aside, form, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr {
-  display: flex;
-}
-
-body {
-  flex-direction: column;
-  background-image: url("../images/clipboard-backgrond-mobile.png");
-  background-color: var(--red-1);
-}
-body main {
-  min-height: calc(100vh - 400px);
-  width: 100%;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-body main section {
-  display: inline;
-}
-body main section .actions {
-  display: flex;
-  text-align: center;
-}
-body main section .actions button {
-  width: 175px 64px;
-  padding: 19px 55px 19px 55px;
-  text-transform: uppercase;
-  border-radius: 10px 10px 0px 0px;
-  background-color: var(--red-0);
-  font-weight: 700;
-  font-size: 22px;
-  border: 1px solid var(--red-0);
-}
-body main section form {
-  flex-direction: column;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: var(--red-0);
-  border-color: var(--red-0);
-  border-radius: 0px 0px 10px 10px;
-  border: 1px solid var(--red-0);
-}
-body main section form .field {
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  border: none;
-}
-body main section form .field input {
-  width: 250px;
-  height: 50px;
-  margin: 10px;
-  font-weight: 400;
-  font-size: 16px;
-  border-radius: 10px;
-  color: var(--black-0);
-  border: 0;
-  background: var(--white-0);
-}
-body main section form .field span {
-  position: absolute;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  left: 20px;
-  top: 25px;
-}
-body main section form .actions button {
-  position: absolute;
-  background-color: var(--black-2);
-  color: var(--white-0);
-  border-radius: 10px;
-  border: none;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 16px 30px 16px 30px;
-  margin-top: 20px;
-  right: 67px;
-}
-
-header {
-  margin: 43px auto 122px auto;
-}
-
-/*# sourceMappingURL=main.css.map */
