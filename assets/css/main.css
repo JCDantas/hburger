@@ -53,23 +53,99 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
 }
 
-body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr {
+body, div, article, aside, form, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr {
   display: flex;
 }
 
 body {
-  margin: 0;
   flex-direction: column;
-  background-color: var(--bg-color);
+  background-image: url("../images/clipboard-backgrond-mobile.png");
+  background-color: var(--red-1);
 }
-body > main {
+body main {
   min-height: calc(100vh - 400px);
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main section {
+  display: inline;
+}
+body main section .actions {
+  display: flex;
+  text-align: center;
+}
+body main section .actions button {
+  width: 175px 64px;
+  padding: 19px 55px 19px 55px;
+  text-transform: uppercase;
+  border-radius: 10px 10px 0px 0px;
+  background-color: var(--red-0);
+  font-weight: 700;
+  font-size: 22px;
+  border: 1px solid var(--red-0);
+}
+body main section form {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--red-0);
+  border-color: var(--red-0);
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid var(--red-0);
+}
+body main section form .field {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+body main section form .field input {
+  width: 250px;
+  height: 50px;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 10px;
+  color: var(--black-0);
+  border: 0;
+  background: var(--white-0);
+}
+body main section form .field span {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  left: 20px;
+  top: 25px;
+}
+body main section form .actions button {
+  position: absolute;
+  background-color: var(--black-2);
+  color: var(--white-0);
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 30px 16px 30px;
+  margin-top: 20px;
+  right: 67px;
+}
+
+header {
+  margin: 43px auto 122px auto;
 }
 
 /*# sourceMappingURL=main.css.map */
