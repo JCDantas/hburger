@@ -1,0 +1,22 @@
+@mixin button {
+    min-width: 110px;
+    border: none;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--black);
+}
+
+@mixin button-black {
+    @include button;
+    background-color: var(--black-2);
+    color: var(--white-0);
+}

@@ -1,20 +1,80 @@
 #home {
-    justify-content: center;
+    min-height: calc(100vh - 400px);
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
     .registration {
-        flex-direction: column;
-        background-color: var(--red-0);
-        width: 350px;
-        height: 212px;
-        align-items: center;
-        .actions {
-            margin-bottom: 20px;
-        }
-        .field {
-            .email {
-                margin-bottom: 20px;
+        display: inline;
+        
+        >.actions {
+            display: flex;
+            text-align: center;
+            button {
+                width: 175px 64px;
+                padding: 19px 55px 19px 55px;
+                text-transform: uppercase;
+                border-radius: 10px 10px 0px 0px;
+                background-color: var(--red-0);
+                font-weight: 700;
+                font-size: 22px;
+                border: 1px solid var(--red-0);
             }
-            .password {
-                margin-bottom: 20px;
+        }
+        
+        .fields {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: var(--red-0);
+            border-radius: 0px 0px 10px 10px;
+            border: 1px solid var(--red-0);
+            .field {
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                margin: 10px;
+                input {
+                    width: 250px;
+                    height: 50px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    color: var(--black-0);
+                    border: 0;
+                    background-color: var(--white-0);
+                }
+                span {
+                    position: absolute;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    left: 20px;
+                }
+            }
+            .actions {
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                
+                div {
+                    padding: 0 50px 0 0;
+                    a {
+                        color: var(--white-0);
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+                
+                button {
+                    @include button-black;
+                }
             }
         }
     }
