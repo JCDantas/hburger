@@ -69,9 +69,6 @@ body {
   background-color: var(--red-1);
   background-image: url("../images/clipboard-backgrond-mobile.png");
 }
-body > main {
-  min-height: calc(100vh - 400px);
-}
 
 header {
   margin-left: auto;
@@ -86,8 +83,17 @@ header {
 #home .registration {
   flex-direction: column;
   background-color: var(--red-0);
+  width: 350px;
+  height: 212px;
+  align-items: center;
 }
 #home .registration .actions {
+  margin-bottom: 20px;
+}
+#home .registration .field .email {
+  margin-bottom: 20px;
+}
+#home .registration .field .password {
   margin-bottom: 20px;
 }
 

@@ -3,8 +3,19 @@
     .registration {
         flex-direction: column;
         background-color: var(--red-0);
+        width: 350px;
+        height: 212px;
+        align-items: center;
         .actions {
             margin-bottom: 20px;
+        }
+        .field {
+            .email {
+                margin-bottom: 20px;
+            }
+            .password {
+                margin-bottom: 20px;
+            }
         }
     }
 }

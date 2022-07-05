@@ -15,7 +15,4 @@ body {
     flex-direction: column;
     background-color: var(--red-1);
     background-image: url('../images/clipboard-backgrond-mobile.png');
-    > main {
-        min-height: calc(100vh - 400px);
-    }
 }
