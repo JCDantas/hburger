@@ -4,25 +4,17 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
-    .registration {
+    .acess {
         display: inline;
-        
-        >.actions {
-            display: flex;
-            text-align: center;
-            button {
-                width: 175px 64px;
-                padding: 19px 55px 19px 55px;
-                text-transform: uppercase;
-                border-radius: 10px 10px 0px 0px;
-                background-color: var(--red-0);
-                font-weight: 700;
-                font-size: 22px;
-                border: 1px solid var(--red-0);
+        position: relative;
+        .register {
+            .login {
+                @include button-register-red;
+            }
+            .registration {
+                @include button-register-red-opacity;
             }
         }
-        
         .fields {
             flex-direction: column;
             align-items: center;
@@ -39,7 +31,7 @@
                 border: none;
                 margin: 10px;
                 input {
-                    width: 250px;
+                    width: 280px;
                     height: 50px;
                     font-weight: 400;
                     font-size: 16px;
@@ -57,24 +49,25 @@
                     left: 20px;
                 }
             }
-            .actions {
-                justify-content: space-between;
-                align-items: center;
-                margin-top: 10px;
-                
-                div {
-                    padding: 0 50px 0 0;
-                    a {
-                        color: var(--white-0);
-                        text-decoration: none;
-                        font-size: 16px;
-                        font-weight: 400;
-                    }
+        }
+        .actions {
+            margin-top: 10px;
+            position: absolute;
+            justify-content: space-between;
+            align-items: flex-start;
+            left: 35px;
+            right: 35px;
+            bottom: -10px;
+            div {
+                a {
+                    color: var(--white-0);
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 400;
                 }
-                
-                button {
-                    @include button-black;
-                }
+            }
+            button {
+                @include button-actions-black;
             }
         }
     }

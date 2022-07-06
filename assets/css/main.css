@@ -82,24 +82,35 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-#home .registration {
+#home .acess {
   display: inline;
+  position: relative;
 }
-#home .registration > .actions {
-  display: flex;
-  text-align: center;
-}
-#home .registration > .actions button {
-  width: 175px 64px;
-  padding: 19px 55px 19px 55px;
+#home .acess .register .login {
+  width: 175px;
+  height: 64px;
   text-transform: uppercase;
-  border-radius: 10px 10px 0px 0px;
   background-color: var(--red-0);
+  border: 1px solid var(--red-0);
+  border-radius: 10px 10px 0px 0px;
   font-weight: 700;
   font-size: 22px;
-  border: 1px solid var(--red-0);
+  justify-content: center;
+  align-items: center;
 }
-#home .registration .fields {
+#home .acess .register .registration {
+  width: 175px;
+  height: 64px;
+  text-transform: uppercase;
+  background-color: var(--red-opacity-0);
+  border: 1px solid var(--red-opacity-0);
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+}
+#home .acess .fields {
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
@@ -108,7 +119,7 @@ body {
   border-radius: 0px 0px 10px 10px;
   border: 1px solid var(--red-0);
 }
-#home .registration .fields .field {
+#home .acess .fields .field {
   position: relative;
   flex-direction: column;
   justify-content: center;
@@ -116,8 +127,8 @@ body {
   border: none;
   margin: 10px;
 }
-#home .registration .fields .field input {
-  width: 250px;
+#home .acess .fields .field input {
+  width: 280px;
   height: 50px;
   font-weight: 400;
   font-size: 16px;
@@ -126,7 +137,7 @@ body {
   border: 0;
   background-color: var(--white-0);
 }
-#home .registration .fields .field span {
+#home .acess .fields .field span {
   position: absolute;
   font-family: "Roboto";
   font-style: normal;
@@ -134,21 +145,22 @@ body {
   font-size: 16px;
   left: 20px;
 }
-#home .registration .fields .actions {
-  justify-content: space-between;
-  align-items: center;
+#home .acess .actions {
   margin-top: 10px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: flex-start;
+  left: 35px;
+  right: 35px;
+  bottom: -10px;
 }
-#home .registration .fields .actions div {
-  padding: 0 50px 0 0;
-}
-#home .registration .fields .actions div a {
+#home .acess .actions div a {
   color: var(--white-0);
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
 }
-#home .registration .fields .actions button {
+#home .acess .actions button {
   min-width: 110px;
   border: none;
   height: 48px;
