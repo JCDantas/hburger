@@ -71,10 +71,24 @@ body {
   background-color: var(--red-1);
 }
 
-#header {
+header {
   margin: 43px auto 122px auto;
 }
+header .logo {
+  float: left;
+  width: 220px;
+  height: 200px;
+  background-image: url("../images/logo-mobile.svg");
+  background-repeat: no-repeat;
+}
 
+@media (min-width: 576px) {
+  header .logo {
+    width: 445px;
+    height: 160px;
+    background-image: url("../images/logo-desktop.svg");
+  }
+}
 #home {
   min-height: calc(100vh - 400px);
   width: 100%;
@@ -146,13 +160,7 @@ body {
   left: 20px;
 }
 #home .acess .actions {
-  margin-top: 10px;
-  position: absolute;
-  justify-content: space-between;
-  align-items: flex-start;
-  left: 35px;
-  right: 35px;
-  bottom: -10px;
+  right: 65px;
 }
 #home .acess .actions div a {
   color: var(--white-0);
@@ -263,6 +271,105 @@ body {
   bottom: -10px;
 }
 #forgot-password .acess .actions button {
+  min-width: 110px;
+  border: none;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--black);
+  background-color: var(--black-2);
+  color: var(--white-0);
+}
+
+#home {
+  min-height: calc(100vh - 400px);
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#home .acess {
+  display: inline;
+  position: relative;
+}
+#home .acess .register .login {
+  width: 175px;
+  height: 64px;
+  text-transform: uppercase;
+  background-color: var(--red-opacity-0);
+  border: 1px solid var(--red-opacity-0);
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+}
+#home .acess .register .registration {
+  width: 175px;
+  height: 64px;
+  text-transform: uppercase;
+  background-color: var(--red-0);
+  border: 1px solid var(--red-0);
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+}
+#home .acess .fields {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--red-0);
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid var(--red-0);
+}
+#home .acess .fields .field {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 10px;
+}
+#home .acess .fields .field input {
+  width: 280px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 10px;
+  color: var(--black-0);
+  border: 0;
+  background-color: var(--white-0);
+}
+#home .acess .fields .field label {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  left: 20px;
+}
+#home .acess .actions {
+  margin-top: 10px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: flex-start;
+  left: 35px;
+  right: 35px;
+  bottom: -10px;
+  margin-left: 170px;
+}
+#home .acess .actions button {
   min-width: 110px;
   border: none;
   height: 48px;

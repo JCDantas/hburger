@@ -28,24 +28,33 @@
 
 <body>
     <header id="header">
+        
         <a href="index.html#home" class="logo" ></a>
+    
     </header>
 
-    <main id="forgot-password">
+    <main id="home">
         <section class="acess">
             <div class="register">
                 <button type="button" class="login">Login</button>
                 <button type="button" class="registration">Cadastro</button>
             </div>
             <form class="fields">
-                <span class="report">Informe o seu e-mail:</span>
+                <div class="field">
+                    <input type="text" name="name" id="name" required />
+                    <label>Nome</label>
+                </div>
                 <div class="field">
                     <input type="email" name="email" id="email" required />
                     <label>E-mail</label>
                 </div>
-                
+                <div class="field">
+                    <input type="password" name="password" id="password" required />
+                    <label>Senha</label>
+                </div>
             </form>
             <div class="actions">
+                
                 <button type="submit">Enviar</button>
             </div>
         </section>
