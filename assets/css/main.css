@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   src: local("Roboto Light"), url("../fonts/Roboto-Light.ttf") format("truetype");
@@ -72,22 +71,22 @@ body {
   background-color: var(--red-1);
 }
 
-header {
+#header {
   margin: 43px auto 122px auto;
 }
-header .logo {
-  float: left;
-  width: 220px;
-  height: 200px;
-  background-image: url("../images/logo-mobile.svg");
-  background-repeat: no-repeat;
+#header .logo-desktop {
+  display: none;
 }
 
-@media (min-width: 576px) {
-  header .logo {
-    width: 445px;
-    height: 160px;
-    background-image: url("../images/logo-desktop.svg");
+@media (min-width: 1440px) {
+  #header {
+    margin: 75px auto 130px auto;
+  }
+  #header .logo-mobile {
+    display: none;
+  }
+  #header .logo-desktop {
+    display: flex;
   }
 }
 #home {
@@ -392,10 +391,6 @@ header .logo {
   color: var(--black);
   background-color: var(--black-2);
   color: var(--white-0);
-}
-
-@media (min-width: 1920px) {
-  /*Se houvesse alguma diferença para desktop no projeto do figma, estaria aqui*/
 }
 
 /*# sourceMappingURL=main.css.map */

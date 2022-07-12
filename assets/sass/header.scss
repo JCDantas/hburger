@@ -1,21 +1,18 @@
-header {
+#header {
     margin: 43px auto 122px auto;
-    .logo {
-        float: left;
-        width: 220px;
-        height: 200px;
-        background-image: url('../images/logo-mobile.svg');
-        background-repeat: no-repeat;
-        
+    .logo-desktop {
+        display: none;
     }
 }
 
-@media (min-width: 576px) {
-    header {
-        .logo {
-            width: 445px;
-            height: 160px;
-            background-image: url('../images/logo-desktop.svg');
+@media (min-width: 1440px) {
+    #header {
+        margin: 75px auto 130px auto;
+        .logo-mobile {
+            display: none;
+        }
+        .logo-desktop {
+            display: flex;
         }
     }
 }
