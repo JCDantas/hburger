@@ -161,7 +161,16 @@ header .logo {
   left: 20px;
 }
 #home .acess .actions {
-  right: 65px;
+  margin-top: 10px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: flex-start;
+  left: 35px;
+  right: 35px;
+  bottom: -10px;
+}
+#home .acess .actions div {
+  padding: 0px 50px 0px 0px;
 }
 #home .acess .actions div a {
   color: var(--white-0);
