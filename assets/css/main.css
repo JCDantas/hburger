@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   src: local("Roboto Light"), url("../fonts/Roboto-Light.ttf") format("truetype");
@@ -114,7 +115,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 52px;
   background-color: var(--red-0);
   border-radius: 0px 0px 10px 10px;
   border: 1px solid var(--red-0);
@@ -279,6 +280,105 @@ body {
   color: var(--black);
   background-color: var(--black-2);
   color: var(--white-0);
+}
+
+#registration {
+  min-height: calc(100vh - 400px);
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#registration .acess {
+  display: inline;
+  position: relative;
+}
+#registration .acess .register .login {
+  width: 175px;
+  height: 64px;
+  text-transform: uppercase;
+  background-color: var(--red-opacity-0);
+  border: 1px solid var(--red-opacity-0);
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+}
+#registration .acess .register .registration {
+  width: 175px;
+  height: 64px;
+  text-transform: uppercase;
+  background-color: var(--red-0);
+  border: 1px solid var(--red-0);
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 700;
+  font-size: 22px;
+  justify-content: center;
+  align-items: center;
+}
+#registration .acess .fields {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 43px;
+  background-color: var(--red-0);
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid var(--red-0);
+}
+#registration .acess .fields .field {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 10px;
+}
+#registration .acess .fields .field input {
+  width: 280px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 10px;
+  color: var(--black-0);
+  border: 0;
+  background-color: var(--white-0);
+}
+#registration .acess .fields .field label {
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  left: 20px;
+}
+#registration .acess .actions {
+  margin-top: 10px;
+  position: absolute;
+  right: 35px;
+  bottom: -10px;
+}
+#registration .acess .actions button {
+  min-width: 110px;
+  border: none;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--black);
+  background-color: var(--black-2);
+  color: var(--white-0);
+}
+
+@media (min-width: 1920px) {
+  /*Se houvesse alguma diferença para desktop no projeto do figma, estaria aqui*/
 }
 
 /*# sourceMappingURL=main.css.map */

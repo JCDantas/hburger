@@ -1,4 +1,4 @@
-#home {
+#registration {
     min-height: calc(100vh - 400px);
     width: 100%;
     flex-direction: column;
@@ -9,17 +9,17 @@
         position: relative;
         .register {
             .login {
-                @include button-register-red;
+                @include button-register-red-opacity;
             }
             .registration {
-                @include button-register-red-opacity;
+                @include button-register-red;
             }
         }
         .fields {
             flex-direction: column;
             align-items: center;
             padding-top: 40px;
-            padding-bottom: 52px;
+            padding-bottom: 43px;
             background-color: var(--red-0);
             border-radius: 0px 0px 10px 10px;
             border: 1px solid var(--red-0);
@@ -53,22 +53,14 @@
         .actions {
             margin-top: 10px;
             position: absolute;
-            justify-content: space-between;
-            align-items: flex-start;
-            left: 35px;
             right: 35px;
             bottom: -10px;
-            div {
-                a {
-                    color: var(--white-0);
-                    text-decoration: none;
-                    font-size: 14px;
-                    font-weight: 400;
-                }
-            }
             button {
                 @include button-actions-black;
             }
         }
     }
 }
+@media (min-width: 1920px) {
+    /*Se houvesse alguma diferença para desktop no projeto do figma, estaria aqui*/
+  }
